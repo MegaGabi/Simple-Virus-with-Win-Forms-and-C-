@@ -36,9 +36,10 @@ namespace not_a_virus
 
             this.BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
 
-            if (initial)
+            if (initial) 
             {
-                create.Enabled = true;
+                create.Enabled = true; //allow only one form to create another forms. 
+                //Basicaly there will be one parent and hundreds of its children
                 initial = false;
             }
 
